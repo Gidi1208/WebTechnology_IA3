@@ -23,7 +23,7 @@ const limiter = rateLimit({
 const app = express();
 app.use(limiter);
 app.use(cors({
-  origin: ['http://localhost:5173', 'https://web-technology-ia-3.vercel.app'],
+  origin: ['https://web-technology-ia-3-k4peqtob7-gidi1208s-projects.vercel.app', 'https://web-technology-ia-3.vercel.app'],
   credentials: true
 }));
 app.use(express.json());
@@ -81,4 +81,5 @@ const startServer = async () => {
 
 
 startServer();
+
 
