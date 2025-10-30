@@ -1,4 +1,3 @@
-import "./utils/loadEnv.js"
 import express from "express";
 import cookieParser from "cookie-parser";
 import rateLimit from 'express-rate-limit';
@@ -79,5 +78,6 @@ const startServer = async () => {
         console.log(`Environment: ${process.env.NODE_ENV || 'development'}`);
     });
 };
+
 
 startServer();
