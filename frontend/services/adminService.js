@@ -1,4 +1,4 @@
-const API_BASE_URL = import.meta.env.VITE_API_URL;
+const API_BASE_URL = import.meta.env.VITE_API_URL || process.env.VITE_API_URL 
 
 class AdminService {
   async request(endpoint, options = {}) {
@@ -61,3 +61,4 @@ class AdminService {
 }
 
 export default new AdminService();
+
