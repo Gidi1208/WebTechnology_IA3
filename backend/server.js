@@ -26,7 +26,7 @@ const limiter = rateLimit({
 const app = express();
 app.use(limiter);
 app.use(cors({
-  origin: ['http://localhost:5173', 'http://localhost:3000'],
+  origin: ['http://localhost:5173', 'https://web-technology-ia-3.vercel.app'],
   credentials: true
 }));
 app.use(express.json());
